@@ -2,13 +2,13 @@
 
 stracture and packages:
 
-di - service locator provider
-db - room databse
-network - retrofit
-viewmodels - android view models init with viewModelFactory
-ui - single activity app with two fragments: AppDetetailsFragment, AppsListFragment
-   - appsAdapter - using ListAdapter with custome AppDiffUtil
-services - PopularAppsWorker - using Worker to schedule update every 12 hours
+- di - service locator provider
+- db - room databse
+- network - retrofit
+- viewmodels - android view models init with viewModelFactory
+- ui - single activity app with two fragments: AppDetetailsFragment, AppsListFragment
+  - appsAdapter - using ListAdapter with custome AppDiffUtil
+- services - PopularAppsWorker - using Worker to schedule update every 12 hours
 
 using corutines and flow
 
