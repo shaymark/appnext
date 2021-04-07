@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/appsListFragment">
+
+    <fragment
+        android:id="@+id/appsListFragment"
+        android:name="com.markoapps.testserviceproject.ui.AppsListFragment"
+        android:label="fragment_app_list"
+        tools:layout="@layout/fragment_app_list" >
+        <action
+            android:id="@+id/action_appsListFragment_to_appDetailsFragment"
+            app:destination="@id/appDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appDetailsFragment"
+        android:name="com.markoapps.testserviceproject.ui.AppDetailsFragment"
+        android:label="AppDetailsFragment" >
+        <argument
+            android:name="appDetails"
+            app:argType="com.markoapps.testserviceproject.model.AppModel" />
+    </fragment>
+</navigation>
